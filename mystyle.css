@@ -1,0 +1,217 @@
+/*Sarah DelaRosa, period 2, Web Development*/
+/* 
+	Color Scheme for this website:
+	#0A2027 darkest blue black
+	#688DA1 light blue
+	#2A4F5A dark blue
+	#BAAA9C beige
+	#A48066 tanner beige
+*/
+
+body {
+	font-size: 1em;
+	font-weight: normal;
+	font-family: "Verdana",Helvetica, Verdana, Sans-serif;
+	color: #000000; /*black*/
+	background-color: #BAAA9C; /*beige*/
+	text-align: left; 
+	width: 85%;
+	min-width: 720px;
+	margin: 0 auto;
+	background-image:url('../images/brown.jpg');
+}
+
+h1 {
+	font-size: 3.25em;
+	font-weight: bold;
+	font-family: "Century Gothic",Tahoma, Verdana, Serif;
+	color: #2A4F5A; /*blue*/
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: bold;
+	font-family: "Helvetica",Futura, Gothic, Sans-serif;
+	color: 	#0A2027; /* darkest blue black*/
+	background-color: #A48066; /* dark beige*/
+	text-align: center;
+}
+
+div {
+	font-size: 1.438em;
+	font-weight: bold;
+	font-family: "Trebuchet",American Typewriter, Lucia Console, Sans-serif;
+	color: 	#0A2027; /* darkest blue black*/
+	text-align: left;
+	background-color: #688DA1;/*light blue*/
+	border: 1px solid black;
+ 	padding: 1em;
+	margin: 1em;
+ 	box-shadow: 4px 4px 4px black; 
+}
+
+p {
+	font-size: 1em;
+	font-weight: normal;
+	font-family: "Verdana",Tahoma, Monaco, Sans-serif;
+	color: #2A4F5A; /*blue*/
+	text-align: left;
+	background-color: #688DA1; /*light blue*/
+	margin: 1em;
+	padding: 1em;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #0A2027; /*darkest blue black*/
+}
+
+button {
+	font-size: 18px;
+	background-color: #688DA1;
+	color: #0A2027;
+	border: 2px solid black; 
+}
+
+button:hover, button:focus, button:active {
+	/*swap colors*/
+	color: #0A2027;
+	background-color: #A48066;
+	cursor: pointer; /*displays a hand*/
+}
+
+a {
+ 	font-size: 18px;
+}
+
+a:hover, a:focus {
+		color: #0A2027;/* darkest blue */
+		background-color: #A48066; /*tanner beige */
+}
+
+h2#evaluation {
+	text-align: center;
+	margin: 50px 0px 50px 0px;
+}
+
+table {
+	margin: 0 auto;
+	background-color: black;
+}
+
+th, td {
+	background-color: white;
+	color: black;
+	padding: 0.75em;
+	margin: 1px;
+}
+
+caption {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 0.75em;
+}
+
+/* navigation menu styles*/
+nav {
+	clear: left;	
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li{
+	float: left;
+	margin-right: 1.5em;
+}
+
+nav ul li a {
+	padding: 0.25em 1em;
+	text-decoration: none; /*no underline*/
+	background-color: #688DA1;
+	color: #0A2027;
+	border :2px solid black;
+	border-top-left-radius: 1em 1em;
+	border-top-right-radius:1em 1em;
+}
+
+ nav ul li a:hover, nav ul li a:focus {
+ 	color: #0A2027;
+ 	background-color: #A48066;
+ 	font-weight: bold;
+
+ }
+
+
+main {
+	clear: left;
+	padding: 1em;
+}
+/* elements with ids and classes */
+
+div#skipnav {
+		position: relative;
+		top: 5px;
+		left: 5px;
+		right: 12.5%;
+		width: 10em;
+		text-align: center;
+}
+
+div.info {
+		width: 40%;
+		font-size: 1.2em;
+		float: left;
+}
+
+div#clock {
+		width: 13%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1.6em;
+}
+
+main, main p {
+		color: #0A2027;
+		font-style: normal;
+}
+
+main p {
+		margin-left: 2em;
+}
+
+main p#overview {
+		/* cancel out the above style for the #overview */
+		margin-left: 1em;
+		font-size: 1.1em;
+}
+
+p#overview:first-letter {
+ 	font-family: "Trebuchet","American Typewriter",regular;
+ 	font-size: 3em;
+}
+
+main p.temp {
+		font-style: normal;
+}
+
+div#myplayer {
+	text-align: center;
+}
+
+div#Newsletter{
+	text-align: left;
+	font-size: 0.8em;
+}
+
+div#Notification{
+	text-align: left;
+	font-size: 1em;
+	padding: none;
+}
+
+div#textbox{
+	text-align: left;
+	font-size: 1em;
+}
