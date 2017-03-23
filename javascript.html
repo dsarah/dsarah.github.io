@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Web Portfolio: Sarah Dela Rosa Javascript Page</title>
+
+		<link rel="shortcut icon" href="_assets/images/favicon.png">
+
+		<link type="text/css" rel="stylesheet" href="_assets/css/mystyle.css" media="screen">
+
+		  <style>
+    	div#clock { 
+    		display: block;
+      /* your style declarations go here */
+    	}
+  </style>
+
+	<script>
+		function showAlert() {
+		var myText = "Chris Evans is hot!";
+		alert (myText);
+		}
+
+		 function updateTime() { 
+
+  	// get all parts of the current time
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+
+   // add leading zero's to minutes and seconds
+  if (minutes < 10) { 
+    minutes = '0' + minutes;
+  }
+  if (seconds < 10) { 
+    seconds = '0' + seconds;
+  }				
+
+  // get time of day (am or pm) 
+  if (hours >= 12 && hours < 24) { 
+    var timeOfDay = 'pm';
+  }
+  else { 
+    var timeOfDay = 'am'; 
+  }
+				
+  // convert hours from 24-hour time to 12-hour time
+  if (hours > 12) { 
+    hours = hours - 12;
+  }
+
+    // splice them together into a character string named "currentTime"
+    var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;
+	hours = 24;
+ 	minutes = 7;
+  	seconds = 3;    
+    
+    // get the clock div 
+    var myClock = document.getElementById('clock');
+  
+    // write the currentTime string to the clock div
+    myClock.innerHTML = currentTime;
+   }
+
+     function toggleClock() { 
+    // get the clock 
+    var myClock = document.getElementById('clock');
+
+    // get the current value of the clock's display property 
+    var displaySetting = myClock.style.display;
+
+    // also get the clock button, so we can change what it says 
+    var clockButton = document.getElementById('clockButton');
+				
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'block') { 
+      // clock is visible. hide it
+      myClock.style.display = 'none';
+      // change button text
+      clockButton.innerHTML = 'Show clock';
+    }
+    else { 
+      // clock is hidden. show it 
+      myClock.style.display = 'block';
+      // change button text
+      clockButton.innerHTML = 'Hide clock';
+    }
+  }  
+  
+	</script>
+
+
+	</head>
+	
+
+		<button onclick="showAlert()">
+			Click Here</button>
+		<button onclick="toggleClock()" id="clockButton">
+			Show clock</button>
+
+			<div id="clock">
+			<body onload="setInterval('updateTime()',1000)">
+		<h1>Web Portfolio: Javascript</h1>
+			<nav>
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="usability.html">Usability</a>
+			</li>
+			<li>
+				<a href="graphics.html">Graphics</a>
+			</li>				
+			<li>
+				<a href="javascript.html">Javascript</a>
+			</li>
+			<li>
+				<a href="tools.html">Tools</a>
+			</li>
+			<li>
+				<a href="video.html">Videos</a>
+			</li>
+		</ul>
+	</nav>
+	<img src="_assets/images/bannerclear.png">
+
+  <div id="textbox">
+  <form action="">
+  Name: <input type="text" name="userid"><br>
+  Phone: <input type="text" name="phne#"><br>
+  Email: <input type="text" name="email"><br>
+  </form>
+
+  <div class="notify">
+  <div id="Notification">
+    <label for="myItems">Where would you like to be notified?</label>
+    <select id="typeoftechnology">
+      <option value="Phone">Phone</option>
+      <option value="Email">Email</option>
+      <option value="Desktop/Laptop">Desktop/Laptop</option>
+  </select>
+  </div>
+
+  <div class="items">
+  <div id="Newsletter">
+    <label for="myItems">What type of newsletter would you like?</label>
+  <br>
+    <input id="items" type="radio" value="Daily">
+    <label for="myItems">Daily</label>
+  <br>
+    <input id="items" type="radio" value="Weekly">
+    <label for="myItems">Weekly</label>
+  <br>
+    <input id="items" type="radio" value="Monthly">
+    <label for="myItems">Monthly</label>
+  </div>
+
+	</body>
+</html>
